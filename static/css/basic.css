@@ -1,8 +1,447 @@
 @charset "utf-8";
+html,body,div,h2,ul,li,span,em,p,dl,dd,i,input, textarea, select, option,button{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Microsoft Yahei", "Arial" ;
+    font-size: 14px;
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    color: #666;
+}
+html,body,#app{
+  width: 100%;
+  height: 100%;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;  
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+em,i{
+    font-style: normal;
+}
+.content{
+    width: 100%;
+    padding: 0 20px;
+}
+.lon_pt20{
+    padding-top: 20px;
+}
+.lon_pt30{
+    padding-top: 30px;
+}
+.lon_ml20{
+  margin-left: 20px;
+}
+.lon_mr10{
+  margin-right: 10px;
+}
+ul,li{
+  list-style: none;
+}
+.lon_top{
+    width: 100%;
+    height: 46px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+.lon_top a{
+    position: absolute;
+    top: 10px;
+}
+.lon_top .left{
+    left: 20px;
+}
+.lon_top .cha{
+    right: 20px;
+}
+.lon_top span{
+    width: 100%;
+    text-align: center;
+    display: block;
+    line-height: 46px;
+    color: #000;
+    font-size: 18px;
+}
+
+.loginInfo h2{
+    height: 100px;
+    line-height: 120px;
+    font-size: 28px;
+}
+.loginInfo li{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #EAEAEA;
+}
+.loginInfo li input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.loginInfo_bottom a,
+.loginInfo_bottom .button{
+    width: 100%;
+    height: 45px;
+    background: #FF5925;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+.loginInfo_bottom .register{
+    margin: 70px 0 8px 0;
+}
+.loginInfo_bottom span{
+    text-indent: 10px;
+    display: block;
+    width: 100%;
+    font-size: 12px;
+}
+.loginInfo_center{
+    height: 40px;
+    line-height: 40px;
+}
+.loginInfo_center a{
+    float: right;
+    margin-left: 40px;
+    font-size: 12px;
+    color: #000;
+}
+.loginInfo_bottom .wechart{
+    margin: 50px 0 20px 0;
+    background: #0DBB0A;
+}
+.loginInfo .sendli{
+    position: relative;
+}
+.loginInfo .sendli a{
+    width: 70px;
+    height: 100%;
+    display: block;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    text-align: right;
+    color: #0099FF;
+}
+/*个人中心*/
+.myInfo_top{
+    width: 100%;
+    height: 126px;
+    padding: 30px 50px;
+    background: #FF834D;
+}
+.myInfo_top .img{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    float: left;
+    margin-right: 30px;
+}
+.myInfo_top .img img{
+    width: 58px;
+    height: 58px;
+}
+.myInfo_top .text h2{
+    font-size: 14px;
+    color: #fff;
+    line-height: 38px;
+}
+.myInfo_top .text a{
+    border: 1px solid #fff;
+    border-radius: 3px;
+    padding: 1px 10px;
+    display: inline-block;
+    color: #fff;
+}
+.myInfo {
+    padding: 20px;
+}
+.myInfo li{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    border-bottom: 1px solid #cac8c8;
+}
+.myInfo li a{
+    width: 100%;
+    display: block;
+}
+.myInfo li .myInfol{
+    font-size: 20px;
+    margin: 0 20px 0 10px;
+}
+.myInfo li .myInfor{
+    float: right;
+    font-size: 34px;
+    color: #d4d1d1;
+    margin: 10px 0 0 15px;
+}
+.myInfo li em{
+    font-style: normal;
+    font-size: 14px;
+}
+.loginInfo_bottom .btn{
+    width: 140px;
+    margin: 50px auto 0 auto;
+}
+.myInfoTX{
+    position: relative;
+}
+.myInfoTX span{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.myInfoTX span img{
+    width: 100%;
+}
+/*我的设备*/
+.myDev{
+    padding-top: 15px;
+}
+.myDev_search{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+.myDev_search i{
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #ccc;
+}
+.myDev_search input{
+    width: calc(100% - 62px);
+    border: none;
+    outline: none;
+}
+.myDev_add a{
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    background: #68CD9A;
+    border-radius: 7px;
+    color: #fff;
+    padding: 0 10px;
+    margin: 10px;
+    font-size: 12px;
+}
+.myDev_list li{
+    padding: 20px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.myDev_list li h2{
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.myDev_list li h2 em{
+    height: 100%;
+    padding: 0 15px;
+    display: block;
+    float: right;
+    color: #fff;
+    border-radius: 5px;
+}
+.myDev_list li h2 em.well{
+    background: #66CCFF;
+}
+.myDev_list li h2 em.alarm{
+    background: #FF0000;
+}
+.myDev_list li h2 em.over{
+    background: #FFCC66;
+}
+.myDev_list li label{
+    width: 80px;
+    display: inline-block;
+}
+.myDev_list li p{
+    height: 26px;
+    line-height: 26px;
+    color: #999;
+}
+.devDetail_top{
+  width: 100%;
+  padding: 10px;
+  background: #66CCFF;
+  color: #fff;
+  text-align: center;
+}
+.devDetail_topbox i{
+  font-size: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.devDetail_topbox span{
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.devDetail_topbox span.searchSpan{
+  line-height: 40px;
+}
+.devDetail_topinfo{
+  line-height: 30px;
+}
+.devDetail .el-tabs__nav{
+  width: 100%;
+}
+.devDetail .el-tabs__item{
+  width: 25%;
+  text-align: center;
+  padding: 0;
+}
+.devDetail .el-tabs__item.is-active{
+  border-bottom: 2px solid #FF834D;
+}
+.devDetail .el-tabs__item:hover,
+.devDetail .el-tabs__item.is-active{
+  color: #FF834D;
+}
+.devDetail .el-tabs__active-bar{
+  background-color: #FF834D;
+}
+.devDetail .el-form-item{
+  border-bottom: 1px solid #ccc;
+}
+.devDetail .el-form-item input,
+.repairsDetail .el-form-item textarea,
+.repairs .el-form-item textarea{
+  border: none;
+}
+.repairsDetail .el-form-item,
+.noBorder{
+  border: none !important;
+}
+.devDetail .el-form-item__label{
+  text-align: left;
+}
+.devDetailJL li{
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  font-size: 12px;
+}
+.devDetailJL li p{
+  height: 24px;
+  line-height: 24px;
+}
+.devDetailJL_right{
+  width: 75px;
+  line-height: 48px;
+}
+.devDetailJL_left{
+  width: calc(100% - 75px);
+}
+.devDetailJL_right i{
+    float: right;
+    font-size: 32px;
+    color: #d4d1d1;
+    margin: 8px 0 0 10px;
+}
+.repairsDetail .el-form-item{
+  margin-bottom: 10px;
+}
+
+.search{
+  width: 80%;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  margin-top: -100px;
+}
+.search .fa-qrcode{
+  font-size: 40px;
+  float: right;
+  margin-top: 2px;
+}
+.search_info a{
+  color: #80CEEE;
+  margin: 10px 0 0 10px;
+  display: block;
+}
+.devDetailItem{
+  position: relative;
+}
+.devDetailItem a{
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  color: #006666;
+}
+.devDetailItem a em{
+  margin-left: 5px;
+}
+.repairs_top{
+  background: #FF9933;
+}
+.repairs_top i{
+  font-size: 60px;
+}
+.repairs .el-tabs__item{
+  width: 50%;
+}
 
 
 
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

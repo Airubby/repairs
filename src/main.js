@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import ElSearchTablePagination from 'el-table-pagination'
 import App from './App'
 import router from './router'
+import topInfo from './components/topInfo'
 import 'babel-polyfill'  //兼容低版本浏览器
 
 // 引用API文件
@@ -17,7 +18,7 @@ Vue.prototype.$api = api
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(ElSearchTablePagination)
-
+Vue.use(topInfo)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
