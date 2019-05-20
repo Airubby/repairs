@@ -6,35 +6,35 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',component: (resolve) => require(['@/page/index'], resolve),
+      path: '/',meta:{title:'报修系统-首页'},component: (resolve) => require(['@/page/index'], resolve),
     },{
-      path: '/login',component: (resolve) => require(['@/page/login'], resolve)
+      path: '/login',meta:{title:'报修系统-账号登录'},component: (resolve) => require(['@/page/login'], resolve)
     },{
-      path: '/register',component: (resolve) => require(['@/page/register'], resolve)
+      path: '/register',meta:{title:'报修系统-账号注册'},component: (resolve) => require(['@/page/register'], resolve)
     },{
-      path: '/addDev',component: (resolve) => require(['@/page/addDev'], resolve)
+      path: '/addDev',meta:{title:'报修系统-设备添加'},component: (resolve) => require(['@/page/addDev'], resolve)
     },{
-      path: '/devDetail',component: (resolve) => require(['@/page/devDetail'], resolve)
+      path: '/devDetail',meta:{title:'报修系统-设备详情'},component: (resolve) => require(['@/page/devDetail'], resolve)
     },{
-      path: '/editMyInfo',component: (resolve) => require(['@/page/editMyInfo'], resolve)
+      path: '/editMyInfo',meta:{title:'报修系统-我的资料'},component: (resolve) => require(['@/page/editMyInfo'], resolve)
     },{
-      path: '/forgot',component: (resolve) => require(['@/page/forgot'], resolve)
+      path: '/forgot',meta:{title:'报修系统-密码找回'},component: (resolve) => require(['@/page/forgot'], resolve)
     },{
-      path: '/myDev',component: (resolve) => require(['@/page/myDev'], resolve)
+      path: '/myDev',meta:{title:'报修系统-我的设备'},component: (resolve) => require(['@/page/myDev'], resolve)
     },{
-      path: '/myInfo',component: (resolve) => require(['@/page/myInfo'], resolve)
+      path: '/myInfo',meta:{title:'报修系统-个人中心'},component: (resolve) => require(['@/page/myInfo'], resolve)
     },{
-      path: '/repairsDetail',component: (resolve) => require(['@/page/repairsDetail'], resolve)
+      path: '/repairsDetail',meta:{title:'报修系统-报修详情'},component: (resolve) => require(['@/page/repairsDetail'], resolve)
     },{
-      path: '/search',component: (resolve) => require(['@/page/search'], resolve)
+      path: '/search',meta:{title:'报修系统-设备查询'},component: (resolve) => require(['@/page/search'], resolve)
     },{
-      path: '/searchDevDetail',component: (resolve) => require(['@/page/searchDevDetail'], resolve)
+      path: '/searchDevDetail',meta:{title:'报修系统-查询详情'},component: (resolve) => require(['@/page/searchDevDetail'], resolve)
     },{
-      path: '/pollingList',component: (resolve) => require(['@/page/pollingList'], resolve)
+      path: '/pollingList',meta:{title:'报修系统-巡检记录'},component: (resolve) => require(['@/page/pollingList'], resolve)
     },{
-      path: '/repairsList',component: (resolve) => require(['@/page/repairsList'], resolve)
+      path: '/repairsList',meta:{title:'报修系统-报修记录'},component: (resolve) => require(['@/page/repairsList'], resolve)
     },{
-      path: '/repairs',component: (resolve) => require(['@/page/repairs'], resolve)
+      path: '/repairs',meta:{title:'报修系统-故障报修'},component: (resolve) => require(['@/page/repairs'], resolve)
     },
     
     

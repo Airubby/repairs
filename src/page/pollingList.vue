@@ -1,10 +1,5 @@
 <template>
     <div>
-        <div class="lon_top">
-            <router-link to="/myInfo" class="left"><img src="static/images/left.png"></router-link>
-            <span>巡检记录</span>
-            <router-link to="" class="cha"><img src="static/images/cha.png"></router-link>
-        </div>
         <div class="content devDetailJL">
             <ul>    
                 <li>

@@ -1,11 +1,5 @@
 <template>
     <div>
-        <div class="lon_top">
-            <router-link to="/" class="left"><img src="static/images/left.png"></router-link>
-            <span>账号登录</span>
-            <router-link to="" class="cha"><img src="static/images/cha.png"></router-link>
-        </div>
-        <topInfo v-bind="topInfo"></topInfo>
         <div class="content loginInfo">
             <h2>账号登录</h2>
             <ul>
@@ -26,16 +20,13 @@
 
 <script>
 export default {
-  created () {
+    
+created () {
       
  },
  data(){
   
   	return {
-        topInfo:{
-            title:"账号登录",
-            url:"",
-        },
        loginInfo:{
            phone:'',
            pwd:"",
@@ -49,7 +40,15 @@ export default {
         this.$api.get('/login/login', this.loginInfo, r => {
             console.log(r)
             if(r.success){
-                
+                this.$message.success("登录成功，欢迎使用报修系统");
+                var loginInfo={};
+                if(localStorage.loginInfo){
+                    loginInfo=JSON.parse(localStorage.loginInfo);
+                }
+                loginInfo.username=this.loginInfo.phone;
+                loginInfo.id=r.data.id;
+                localStorage.loginInfo = JSON.stringify(loginInfo);
+                this.$router.push({path:"/myInfo"});
             }
         });
       },

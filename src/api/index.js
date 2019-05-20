@@ -4,19 +4,25 @@ import 'element-ui/lib/theme-chalk/index.css'
 import router from '../router'
 // 配置API接口地址
 //var root = '/api'  //开发环境
-var root2=''   //生产环境
+var root1=''   //生产环境
 // var root1=(function(){
 //     //获取当前网址，如： http://localhost:8083/uimcardprj/share/meun.jsp  
-//     var curWwwPath=window.document.location.href;  
-//     //获取主机地址之后的目录，如： uimcardprj/share/meun.jsp  
-//     var pathName=window.document.location.pathname;  
-//     var pos=curWwwPath.indexOf(pathName);  
-//     //获取主机地址，如： http://localhost:8083  
-//     var localhostPaht=curWwwPath.substring(0,pos);  
+//     // var curWwwPath=window.document.location.href;  
+//     // console.log(curWwwPath)
+//     // //获取主机地址之后的目录，如： uimcardprj/share/meun.jsp  
+//     // var pathName=window.document.location.pathname;  
+//     // console.log(pathName)
+//     // var pos=curWwwPath.indexOf(pathName);  
+//     // console.log(pos)
+//     var host=window.document.location.host
+//     console.log(host)
+//     // //获取主机地址，如： http://localhost:8083  
+//     // var localhostPaht=curWwwPath.substring(0,pos);  
+//     console.log(host+":8094") 
 //     //获取带"/"的项目名，如：/uimcardprj  
 //     //var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);  
 //     //return(localhostPaht+projectName);  
-//     return localhostPaht;
+//     return 'http://'+host+":8094";
 // })();
 // var root=root1+'/ismacsite';
 //用basic的root2  生产环境
@@ -61,8 +67,7 @@ function apiAxios (method, url, params, success, failure) {
     url: url,
     data: method === 'POST' ||method === 'GET' ? params : null,
     params: method === 'POST' ||method === 'GET' ? params : null,
-    headers: method === 'GET'? {'Content-Type': 'application/vnd.ms-excel'}: null,
-    baseURL: root2,
+    baseURL: root1,
     withCredentials: true
   })
   .then(function (res) {

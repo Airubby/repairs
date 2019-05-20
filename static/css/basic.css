@@ -89,7 +89,7 @@ ul,li{
     line-height: 55px;
     border-bottom: 1px solid #EAEAEA;
 }
-.loginInfo li input{
+.loginInfo input{
     width: 100%;
     border: none;
     outline: none;
@@ -167,7 +167,7 @@ ul,li{
 .myInfo_top .text h2{
     font-size: 14px;
     color: #fff;
-    line-height: 38px;
+    line-height: 34px;
 }
 .myInfo_top .text a{
     border: 1px solid #fff;
@@ -220,6 +220,9 @@ ul,li{
 }
 .myInfoTX span img{
     width: 100%;
+}
+.loginInfo .el-form-item{
+    border-bottom: 1px solid #EAEAEA;
 }
 /*我的设备*/
 .myDev{
@@ -302,6 +305,9 @@ ul,li{
   color: #fff;
   text-align: center;
 }
+.devDetail_top_alarm{
+    background: #FF5925;
+}
 .devDetail_topbox i{
   font-size: 80px;
   display: inline-block;
@@ -361,15 +367,15 @@ ul,li{
   font-size: 12px;
 }
 .devDetailJL li p{
-  height: 24px;
+  min-height: 24px;
   line-height: 24px;
 }
 .devDetailJL_right{
-  width: 75px;
+  width: 90px;
   line-height: 48px;
 }
 .devDetailJL_left{
-  width: calc(100% - 75px);
+  width: calc(100% - 90px);
 }
 .devDetailJL_right i{
     float: right;
@@ -379,6 +385,9 @@ ul,li{
 }
 .repairsDetail .el-form-item{
   margin-bottom: 10px;
+}
+.repairsDetail img{
+    max-width: 100%;
 }
 
 .search{
@@ -420,9 +429,15 @@ ul,li{
 .repairs .el-tabs__item{
   width: 50%;
 }
-
-
-
+.img_dialog .el-dialog{
+    width: 100%;
+}
+.img_dialog .el-dialog__headerbtn{
+    width: 40px;
+    height: 40px;
+    top:10px;
+    right:10px;
+}
 
 
 
